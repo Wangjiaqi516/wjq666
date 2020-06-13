@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+	a{
+		text-decoration: none;
+	}
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	ul{
+		list-style-type: none;
+	}
+	.clear:after{
+		content: '';
+		display: block;
+		height: 0;
+		clear: both;
+	}
+	body{
+		background-color: #f3f5f7;
+	}
+	
+	.topone{
+		width: 1200px;
+		height: 99px;
+		margin: 0 auto;
+	}
+	.topone>p{
+		display: inline-block;
+		font-size: 40px;
+		font-family: Microsoft YaHei;
+		font-weight: bold;
+		color: #000000;
+		width: 170px;
+		padding: 20px 11px 29px 9px;
+		float: left;
+		
+
+	}
+	.topone ul{
+		height: 30px;
+		width: 285px;
+		margin-top: 35px;
+		margin-bottom: 35px;
+		margin-left: 60px;
+		float: left;
+	}
+	.topone ul>li{
+		text-align: center;
+		font-size: 18px;
+		margin-right: 28px;
+		float: left;
+	}
+	.topone ul>li a{
+		display: inline-block;
+		color: #050505;
+		padding: 0 8px 10px 8px;
+	}
+	.topone>a{
+		font-size: 15px;
+		height: 12px;
+		width: 60px;
+		color: #666666;
+		margin: 40px 12px 45px 31px;
+		float: right;
+	}
+	
+	.topone>.box .subimt{
+		width: 50px;
+		height: 40px;
+		margin: 30px 0 30px 0;
+		border: 1.5px solid #000000;
+		float: right;
+		background: #00A4FF url(./tupian/search.png) no-repeat center center;
+	}
+	.qwe{
+		position: absolute;
+		float: right;
+		background-color: #00FFFF;
+	}
+	.search{
+		width: 360px;
+		height: 37px;
+		font-size: 15px;
+		margin: 30px 0 30px 0;
+		border: 1.5px solid #000000;
+		float: right;
+	}
+	.b{
+		width: 100%;
+		height: 420px;
+		background: #fff;
+	}
+	.b>.big{
+		width: 1500px;
+		height: 420px;
+		margin: 0 auto;
+		position: relative;
+	}
+	
+	.b>.big img{
+		position: absolute;
+		left: 30px;
+		width: 100%;
+		height: 100%;
+
+	}
+	.b>.big .mulu{
+		position: absolute;
+		left: 0;
+		width: 190px;
+		height: 420px;
+		background: rgba(0,0,0,0.3);
+	}
+	.b>.big .mulu ul{
+		height: 365px;
+		width: 100px;
+		margin: 27px 21px 28px 20px;
+	}
+	.b>.big li{
+		width: 150px;
+		height: 22px;
+		margin-bottom: 20.8px;
+		font-size: 14px;
+		position: relative;
+	}
+	
+	
+	.tui{
+		width: 1200px;
+		margin: 0 auto;
+		height: 80px;
+		position: relative;
+	}
+	.tui p{
+		width: 80px;
+		height: 20px;
+		font-size: 20px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		color: rgba(73,73,73,1);
+		position: absolute;
+		top: 37px;
+	}
+	.tui a{
+		width: 48px;
+		height: 15px;
+		font-size: 12px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		color: rgba(165,165,165,1);
+		position: absolute;
+		right: 35px;
+		bottom: 20px;
+	}
+	
+	.jing{
+		width: 1200px;
+		height: 270px;
+		margin: 0 auto;
+		padding-bottom: 15px;
+		background-color: #f3f5f7;
+	}
+	.jing .box{
+		width: 228px;
+		height: 270px;
+		background: rgba(255,255,255,1);
+		box-shadow: 0px 2px 5px 0px rgba(118,118,118,0.5);
+		margin-right: 15px;
+		float: right;
+
+	}
+	.jing .last{
+		margin-right: 0px;
+
+	}
+	.jing .box>img{
+		width: 228px;
+		height: 155px;
+
+	}
+	.jing .box>a{
+		display: inline-block;
+		width: 185px;
+		height: 34px;
+		font-size: 15px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		color: rgba(5,5,5,1);
+		line-height: 20px;
+		margin: 24px 22px 18px 22px;
+	}
+	
+	.jing .box>div{
+		width: 119px;
+		height: 15px;
+		font-size: 12px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		color: #999999;
+		margin-left: 22px;
+
+	}
+	.jing .box span{
+		color: #FF7C2D;
+	}
+	.ji{
+		height: 22px;
+		width: 1200px;
+		margin: 0 auto;
+		padding: 22px 0 18px 0;
+		position: relative;
+	}
+	.ji>p{
+		width: 140px;
+		height: 20px;
+		font-size: 20px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		color: rgba(73,73,73,1);
+		float: left;
+	}
+	.ji>ul{
+		width: 340px;
+		height: 18px;
+		margin: 0 auto;
+		padding-top: 4px;
+	}
+	.ji li{
+		font-size: 16px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		padding-right: 68px;
+		float: left;
+	}
+	.ji>ul .last{
+		padding-right: 0px;
+	}
+	.ji li>a{
+		color: #868686;
+	}
+	
+	.ji>a{
+		width: 48px;
+		height: 13px;
+		font-size: 12px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		color: rgba(165,165,165,1);
+		position: absolute;
+		right: 35px;
+		bottom: 17px;
+
+	}
+	
+	
+	.end{
+		width: 100%;
+		height: 417px;
+		background: rgba(255,255,255,1);
+	}
+	.end .box{
+		width: 1200px;
+		height: 417px;
+		margin: 0 auto;
+	}
+
+	
+	.end .box>.first{
+		display: inline-block;
+		width: 380px;
+		height: 160px;
+		margin: 135px 140px 0px 21px;
+		float: left;
+
+	}
+	.end>.box .one{
+		display: inline-block;
+		width: 163px;
+		height: 20px;
+		font-size: 36px;
+		font-family: Microsoft YaHei;
+		font-weight: bold;
+		color: #000000;
+		line-height: 21px;
+	}
+	.end>.box .two{
+		display: inline-block;
+		height: 12px;
+		font-size: 12px;
+		font-family: SimSun;
+		font-weight: 400;
+		color: #000000;
+		line-height: 18px;
+		margin-top: 35px;
+	}
+
+	.end>.box>ul{
+		display: inline-block;
+		float: left;
+		width: 100px;
+		height: 127px;
+		margin: 140px 0 10px 110px;
+	}
+	
+	.asd{
+		background-color: black;
+		width: 100%;
+		height: 30;
+	}
+	.asd>p{
+		text-align: center;
+		font-size: 20px;
+		color: rgba(255, 255, 255, 1.0)
+	}
+	</style>
+	
+</head>
+<body>
+		<div class="topone clear">
+			<p><img src="tupian/logo.png" alt=""></p>
+			<ul class="clear">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">商城</a></li>
+				<li><a href="#">视频</a></li>
+				<li><a href="#">比赛</a></li>
+				<li><a href="#">社区</a></li>
+                <li><a href="#">资料</a></li>
+
+			</ul>
+
+			<a href="#">个人中心</a>
+			<form class="box clear">
+				<input type="button" class="subimt">
+				<input class="search" name="search " placeholder="     输入关键词"/>
+			</form>
+		</div>
+	</div>
+	
+	<div class="qwe">
+    <form action="URL">
+			<table border="2" align="right" cellspacing="0" cellpadding="1" width="50" height="50">
+				<caption>用户登录</caption>
+				<tr>
+					<td align="right">账号</td>
+					<td>
+						<input type="text" name="名称" value=""/>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">密码</td>
+					<td>
+						<input type="password" name="pass" />
+					</td>
+					<td>
+						<input type="submit" value="登录" name="sub"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+
+	<div class="b">
+		<div class="big">
+			<img src="./tupian/timg.jpg " alt="">
+			
+		</div>
+		<div class="tui">
+			<p>精品推荐</p>
+			<a href="#">查看全部</a>
+		</div>
+		<div class="jing clear">
+			<div class="box last">
+				<img src="./tupian/logo4.png" alt="">
+				<a href="#">10.12版本研究室：疾跑迎来大加强 诺克萨斯之手加强</a>
+				<div><span>0601</span>·4.4万次播放</div>
+			</div>
+			<div class="box">
+				<img src="./tupian/logo5.png" alt="">
+				<a href="#">魔王一周秀88：谁是蒙多飞刀王？Faker无敌秀</a>
+				<div><span>0601</span>·12.8万次播放</div>
+			</div>
+			<div class="box">
+				<img src="./tupian/logo6.png" alt="">
+				<a href="#">不愧是Dopa御用小弟：金灿毅瑞雯1v3极限操作</a>
+				<div><span>0602</span>· 4.4万次播放</div>
+			</div>
+			<div class="box">
+				<img src="./tupian/logo7.png" alt="">
+				<a href="#">云顶之巅：乌兹回归，再战星海 神超季中版本阵容推荐！</a>
+				<div><span>0603</span>· 12.1万次播放</div>
+			</div>
+			<div class="box">
+				<img src="./tupian/logo8.png" alt="">
+				<a href="#">瑞雯精彩集锦 这手速刷新了我的认知</a>
+				<div><span>0604</span>· 1.5万次播放</div>
+			</div>
+		</div>
+			<div class="jing clear">
+				<div class="box last">
+				<img src="./tupian/logo9.png" alt="">
+				<a href="#">虎牙一周秀110：彩旗卡特天秀操作 1v3上演丝血反杀</a>
+				<div><span>0605</span>· 5.7万次播放</div>
+			</div>
+			<div class="box">
+				<img src="./tupian/logo10.png" alt="">
+				<a href="#">TOP5：Zoom精准控制无情判生死</a>
+				<div><span>0606</span>· 2.1万次播放</div>
+			</div>
+			<div class="box">
+				<img src="./tupian/logo11.png" alt="">
+				<a href="#">嘉文四世，奥利安娜，黑默丁格，辛德拉加入泳池派对</a>
+				<div><span>0607</span>· 8.8万次播放</div>
+			</div>
+			<div class="box">
+				<img src="./tupian/logo12.png" alt="">
+				<a href="#">3分钟了解全新玩法冠军杯赛</a>
+				<div><span>0608</span>·9.5万次播放</div>
+			</div>
+				<div class="box">
+				<img src="./tupian/logo13.png" alt="">
+				<a href="#">星杯解锁搞笑指南，请勿弃队友不顾</a>
+				<div><span>0605</span>· 1858次播放</div>
+			</div>
+			
+		</div>
+		<div class="ji clear">
+			<p>季后赛TOP5</p>
+			<a href="#">查看全部</a>
+		</div>
+		<div class="jing clear">
+			<div class="box">
+				<img src="./tupian/uzi.jpg" alt="">
+				<a href="#">       RNG·Uzi       </a>
+				
+			</div>
+			<div class="box">
+				<img src="./tupian/clearlove.jpg" alt="">
+				<a href="#">EDG·clearlove</a>
+				
+			</div>
+			<div class="box">
+				<img src="./tupian/xiaohu.jpg" alt="">
+				<a href="#">RNG·xiaohu</a>
+				
+			</div>
+			<div class="box">
+				<img src="./tupian/MLXG.jpg" alt="">
+				<a href="#">RNG·MLXG</a>
+				
+			</div>
+			<div class="box last">
+				<img src="./tupian/letme.jpg" alt="">
+				<a href="#">RNG·LETME</a>
+				
+			</div>
+		</div>
+		<div class="end">
+			<div class="box clear">
+				<div class="first">
+					<p class="one"><img src="tupian/bottom.png" alt=""></p>
+				</div>
+				<ul>
+					<li class="top">关于英雄联盟</li>
+					
+					<li><a href="#">管理团队</a></li>
+					<li><a href="#">客户服务</a></li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+				<ul>
+					<li class="top">新手指南</li>
+					<li><a href="#">如何注册</a></li>
+					<li><a href="#">互动娱乐</a></li>
+					<li><a href="#">服务条款</a></li>
+					
+				</ul>
+				<ul>
+					<li class="top">合作伙伴</li>
+					<li><a href="#">合作机构</a></li>
+					<li><a href="#">游戏列表</a></li>
+					<li><a href="#">隐私保护</a></li>
+				</ul>			
+			</div>
+
+		<div class="asd">
+			<p>COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.</p>
+			<p>腾讯公司 版权所有</p>
+		</div>
+	</body>
+</html>
